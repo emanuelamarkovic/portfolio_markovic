@@ -2,7 +2,8 @@
 import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
+import { LinkedinIcon, GithubIcon } from "./Icons";
 
 const CostumLink = ({
   href,
@@ -13,10 +14,16 @@ const CostumLink = ({
   title: string;
   className?: string;
 }) => {
+  const router = useRouter();
   return (
-    <Link href={href} className={`${className} relative`}>
+    <Link href={href} className={`${className} relative group`}>
       {title}
-      <span className="h-1 inline-block w-full bg-dark absolute left-0 -bottom-0.5">
+      <span
+        className={`h-[1px] inline-block absolute left-0 -bottom-0.5 bg-dark
+          transition-[width] ease duration-300
+          ${router.asPath === href ? "w-full" : "w-0"}
+        `}
+      >
         &nbsp;
       </span>
     </Link>
@@ -24,8 +31,6 @@ const CostumLink = ({
 };
 
 const Navbar: React.FC = () => {
-  const router = useRouter();
-  console.log(router);
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between ">
       <nav>
@@ -36,10 +41,10 @@ const Navbar: React.FC = () => {
       </nav>
       <nav>
         <Link href="/" target={"_blank"}>
-          Linkedin
+          <LinkedinIcon />
         </Link>
         <Link href="/" target={"_blank"}>
-          Github
+          <GithubIcon />
         </Link>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
