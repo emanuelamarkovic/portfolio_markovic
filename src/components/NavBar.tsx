@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { LinkedinIcon, GithubIcon } from "./Icons";
+import { motion } from "framer-motion";
 
 const CostumLink = ({
   href,
@@ -39,13 +40,21 @@ const Navbar: React.FC = () => {
         <CostumLink href="/projects" title="Projects" className="mx-4" />
         <CostumLink href="/articles" title="Articles" className="ml-4" />
       </nav>
-      <nav>
-        <Link href="/" target={"_blank"}>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://twitter.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+        >
           <LinkedinIcon />
-        </Link>
-        <Link href="/" target={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://github.com"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+        >
           <GithubIcon />
-        </Link>
+        </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
