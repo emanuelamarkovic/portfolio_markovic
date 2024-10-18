@@ -11,8 +11,8 @@ export const LinkedinIcon = ({
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     fill="#0077B5"
-    width="1em"
-    height="1em"
+    width="2em"
+    height="2em"
     className={`w-full h-auto ${className}`}
     {...rest}
   >
