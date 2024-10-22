@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import Navbar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Navbar />
         <Component {...pageProps} />
       </main>
-      <footer className="flex gap-6 flex-wrap items-center justify-center"></footer>
+      <Footer />
     </>
   );
 }
