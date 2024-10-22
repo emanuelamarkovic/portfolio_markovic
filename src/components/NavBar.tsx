@@ -42,14 +42,14 @@ const Navbar: React.FC = () => {
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="https://twitter.com"
+          href="https://www.linkedin.com/in/emanuela-markovic-5518bb2b7/"
           target={"_blank"}
           whileHover={{ y: -2 }}
         >
           <LinkedinIcon />
         </motion.a>
         <motion.a
-          href="https://github.com"
+          href="https://github.com/emanuelamarkovic"
           target={"_blank"}
           whileHover={{ y: -2 }}
         >
