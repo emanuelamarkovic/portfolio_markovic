@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +12,20 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: "#1b1b1b",
+        light: "#f5f5f5",
+        primary: "#B63E96",
+        primaryDark: "#58E6D9",
+      },
+      fontFamily: {
+        sans: ["var(--font-mont)", ...fontFamily.sans],
+      },
+      animation: {
+        "spin-slow": "spin 8s linear infinite",
+      },
+    },
   },
   plugins: [],
 };
