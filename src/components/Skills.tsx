@@ -41,7 +41,7 @@ const Skills = () => {
           Web
         </motion.div>
         <Skill icon={<FaHtml5 />} x="-10vw" y="0vw" />
-        <Skill icon={<FaCss3Alt />} x="-10vw" y="-10vw" />
+        <Skill icon={<FaCss3Alt />} x="-10vw" y="-9vw" />
         <Skill icon={<FaJs />} x="0vw" y="-10vw" />
         <Skill icon={<FaReact />} x="10vw" y="0vw" />
         <Skill icon={<SiNextdotjs />} x="0vw" y="10vw" />
