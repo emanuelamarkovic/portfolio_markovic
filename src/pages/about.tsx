@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import profile from "../../public/Images/profile.jpg";
 import { MotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -57,6 +58,7 @@ const about = () => {
               />
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
