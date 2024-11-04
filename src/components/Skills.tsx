@@ -43,16 +43,16 @@ const Skills = () => {
         <Skill icon={<FaHtml5 />} x="-10vw" y="0vw" />
         <Skill icon={<FaCss3Alt />} x="-10vw" y="-9vw" />
         <Skill icon={<FaJs />} x="0vw" y="-10vw" />
-        <Skill icon={<FaReact />} x="10vw" y="0vw" />
-        <Skill icon={<SiNextdotjs />} x="0vw" y="10vw" />
-        <Skill icon={<SiTailwindcss />} x="-10vw" y="10vw" />
-        <Skill icon={<SiSass />} x="-15vw" y="10vw" />
-        <Skill icon={<SiBabel />} x="15vw" y="-10vw" />
+        <Skill icon={<FaReact />} x="10vw" y="4vw" />
+        <Skill icon={<SiNextdotjs />} x="15vw" y="5vw" />
+        <Skill icon={<SiTailwindcss />} x="25vw" y="10vw" />
+        <Skill icon={<SiSass />} x="3vw" y="10vw" />
+        <Skill icon={<SiBabel />} x="25vw" y="0vw" />
         <Skill icon={<SiExpress />} x="15vw" y="0vw" />
-        <Skill icon={<SiMongodb />} x="0vw" y="15vw" />
-        <Skill icon={<FaNodeJs />} x="-15vw" y="15vw" />
-        <Skill icon={<SiFigma />} x="15vw" y="-15vw" />
-        <Skill icon={<SiPostgresql />} x="-10vw" y="15vw" />
+        <Skill icon={<SiMongodb />} x="12vw" y="15vw" />
+        <Skill icon={<FaNodeJs />} x="30vw" y="15vw" />
+        <Skill icon={<SiFigma />} x="34vw" y="10vw" />
+        <Skill icon={<SiPostgresql />} x="5vw" y="18vw" />
       </div>
     </>
   );
