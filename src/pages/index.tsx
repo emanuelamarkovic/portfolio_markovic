@@ -58,7 +58,7 @@ export default function Home() {
           </div>
         </Layout>
 
-        <HireMe />
+        {/* <HireMe /> */}
       </main>
     </>
   );
