@@ -1,18 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiSass,
-  SiBabel,
-  SiExpress,
-  SiMongodb,
-  SiPostgresql,
-  SiFigma,
-} from "react-icons/si";
 
-const Skill = ({ icon, x, y }: { icon: React.ReactNode; x: any; y: any }) => {
+const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
   return (
     <motion.div
       className="flex items-center justify-center rounded-full font-semibold bg-dark text-light
@@ -20,10 +9,11 @@ const Skill = ({ icon, x, y }: { icon: React.ReactNode; x: any; y: any }) => {
       whileHover={{ scale: 1.05 }}
       style={{ position: "absolute", left: x, top: y }}
       initial={{ x: 0, y: 0 }}
-      animate={{ x: x, y: y }}
+      whileInView={{ x: x, y: y }}
       transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
     >
-      {icon}
+      {name}
     </motion.div>
   );
 };
@@ -40,19 +30,20 @@ const Skills = () => {
         >
           Web
         </motion.div>
-        <Skill icon={<FaHtml5 />} x="-10vw" y="0vw" />
-        <Skill icon={<FaCss3Alt />} x="-10vw" y="-9vw" />
-        <Skill icon={<FaJs />} x="0vw" y="-10vw" />
-        <Skill icon={<FaReact />} x="10vw" y="4vw" />
-        <Skill icon={<SiNextdotjs />} x="15vw" y="5vw" />
-        <Skill icon={<SiTailwindcss />} x="25vw" y="10vw" />
-        <Skill icon={<SiSass />} x="3vw" y="10vw" />
-        <Skill icon={<SiBabel />} x="25vw" y="0vw" />
-        <Skill icon={<SiExpress />} x="15vw" y="0vw" />
-        <Skill icon={<SiMongodb />} x="12vw" y="15vw" />
-        <Skill icon={<FaNodeJs />} x="30vw" y="15vw" />
-        <Skill icon={<SiFigma />} x="34vw" y="10vw" />
-        <Skill icon={<SiPostgresql />} x="5vw" y="18vw" />
+        <Skill name="HTML" x="-10vw" y="0vw" />
+        <Skill name="CSS" x="-10vw" y="-9vw" />
+        <Skill name="JavaScript" x="0vw" y="-10vw" />
+        <Skill name="React" x="30vw" y="4vw" />
+        <Skill name="Next.js" x="15vw" y="5vw" />
+        <Skill name="Tailwind CSS" x="25vw" y="10vw" />
+        <Skill name="Sass" x="3vw" y="10vw" />
+        <Skill name="Babel" x="25vw" y="20vw" />
+        <Skill name="Express" x="10vw" y="2vw" />
+        <Skill name="MongoDB" x="12vw" y="15vw" />
+        <Skill name="Node.js" x="30vw" y="15vw" />
+        <Skill name="Figma" x="34vw" y="10vw" />
+        <Skill name="PostgreSQL" x="5vw" y="18vw" />
+        <Skill name="TypeScript" x="20vw" y="18vw" />
       </div>
     </>
   );
