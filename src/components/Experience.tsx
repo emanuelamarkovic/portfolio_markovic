@@ -42,7 +42,7 @@ const Experience = () => {
   return (
     <div className="mt-20">
       <h2 className="text-6xl font-bold mb-32 w-full text-center">
-        Experience / Education
+        Professional Experience & Education
       </h2>
       <div ref={ref} className="w-[60%] mx-auto relative">
         <motion.div
@@ -51,15 +51,15 @@ const Experience = () => {
         />
         <ul>
           <Details
-            position="Webentwicklerin Full Stack"
+            position="Webdeveloper Full Stack"
             company="DCI Digital Career Institute GmbH"
             time="06/2023 - 08/2024"
             address="Remote Learning"
-            work="1-jährige Vollzeit-Weiterbildung (remote) im MERN-Stack, inkl. praktischer Projekte."
+            work="1-year full-time further training (remote) in the MERN stack, incl. practical projects."
           />
 
           <Details
-            position="Erprobungscenter digitale Berufe"
+            position="Test centre for digital professions"
             company="DCI Digital Career Institute GmbH"
             time="03/2023 - 04/2023"
             address="Remote Learning"
@@ -71,11 +71,11 @@ const Experience = () => {
             company="DAA Balingen"
             time="10/2022 - 01/2023"
             address="Balingen"
-            work="Grundlagen und Aufbau"
+            work="Basics and structure"
           />
 
           <Details
-            position="Verkäuferin"
+            position="Saleswoman"
             company="Aldi Süd"
             time="08/2018 - 09/2018"
             address="Mössingen"
@@ -91,7 +91,7 @@ const Experience = () => {
           />
 
           <Details
-            position="Kauffrau für Büromanagement"
+            position="Businesswoman for office management"
             company="Montana Trade GmbH"
             time="09/2006 - 12/2007"
             address="Vinkovci (Kroatien)"
@@ -99,7 +99,7 @@ const Experience = () => {
           />
 
           <Details
-            position="Kauffrau für Büromanagement"
+            position="Businesswoman for office management"
             company="Wirtschaftsschule Brcko"
             time="09/2003 - 06/2004"
             address="Brcko (Bosnien)"
@@ -107,7 +107,7 @@ const Experience = () => {
           />
 
           <Details
-            position="Verkäuferin"
+            position="Saleswoman"
             company="Wirtschafts- und Handelsschule Ivan Domac"
             time="09/2000 - 06/2003"
             address="Vinkovci (Kroatien)"
